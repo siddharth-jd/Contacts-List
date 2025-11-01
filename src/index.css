@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================== */
+/* 🌙 DARK MODE REFINED */
+/* ===================== */
+body {
+  background: linear-gradient(135deg, #3b0ca3,#1d5182, #351b4b);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Alphabet Group Headings */
+.group-header {
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 6px solid #a78bfa;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.contact-list {
+  overflow-y: auto;
+  max-height: 80vh;
+  padding-right: 0.5rem;
+}
+
+/* Contact cards */
+.contact-card {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Buttons */
+button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Grid/List toggle buttons */
+.view-switcher button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.view-switcher button.active {
+  background: #a78bfa; /* light purple accent */
+  color: #1e1b4b;
+  font-weight: 600;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(167, 139, 250, 0.4);
+}
+
+/* ===================== */
+/* ☀️ LIGHT MODE IMPROVED */
+/* ===================== */
+html.light body {
+  background: linear-gradient(135deg, #f3e8ff, #ede9fe);
+  color: #2e1065;
+  transition: all 0.3s ease;
+}
+
+/* Header */
+html.light header,
+html.light .header-bar {
+  background: #ffffff;
+  color: #4c1d95;
+  box-shadow: 0 2px 8px rgba(123, 47, 255, 0.2);
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+/* Search bar */
+html.light input {
+  background: #ffffff;
+  border: 1.5px solid rgba(123, 47, 255, 0.25);
+  color: #4c1d95;
+  box-shadow: 0 3px 6px rgba(123, 47, 255, 0.15);
+}
+
+html.light input:focus {
+  border-color: #7c3aed;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(123, 47, 255, 0.2);
+}
+
+html.light input::placeholder {
+  color: #a78bfa;
+}
+
+/* Buttons */
+html.light button {
+  background: linear-gradient(135deg, #3b0ca3,#1d5182, #351b4b);
+  color: #fff;
+  border: none;
+  box-shadow: 0 3px 6px rgba(123, 47, 255, 0.3);
+}
+
+html.light button:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+}
+
+/* Contact cards */
+html.light .contact-card {
+  background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+  color: #2e1065;
+  box-shadow: 0 4px 10px rgba(123, 47, 255, 0.15);
+  border: 1px solid rgba(123, 47, 255, 0.2);
+}
+
+html.light .contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(123, 47, 255, 0.25);
+}
+
+/* Group headers */
+html.light .group-header {
+  background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+  color: #2e1065;
+  border-left: 6px solid #6d28d9;
+  box-shadow: 0 3px 6px rgba(123, 47, 255, 0.25);
+}
+
+/* View Switcher Active */
+html.light .view-switcher button.active {
+  background: #6d47be;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(123, 47, 255, 0.25);
+}
+
+/* ===================== */
+/* 🟣 Grid/List Toggle Active Styling */
+/* ===================== */
+.view-switcher {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.view-switcher button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.view-switcher button.active {
+  background: #a78bfa;
+  color: #1e1b4b;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(167, 139, 250, 0.4);
+}
+
+/* Smooth transitions */
+.contact-card,
+button,
+input,
+body {
+  transition: all 0.3s ease;
+}
