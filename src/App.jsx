@@ -210,7 +210,7 @@ export default function App() {
             onSave={(c) => upsertContact(c)}
           />
         )}
-      </AnimatePresence>
+      </AnAtePresence>
 
       {/* Preview */}
       <AnimatePresence>
@@ -234,7 +234,7 @@ export default function App() {
             }}
             theme={theme}
             
-            
+            {/* --- PASS THE NEW FUNCTION --- */}
             onRemovePhoto={() => {
               removePhoto(preview.id);
             }}
