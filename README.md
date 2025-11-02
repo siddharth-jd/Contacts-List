@@ -2,7 +2,7 @@
 
 A modern, fast, and responsive contact management application built with React, Framer Motion, and Tailwind CSS. This app runs entirely in your browser, saving all your contacts securely in `localStorage`.
 
-**Live Application Link:** [**(https://contacts-list-theta.vercel.app/)**]
+**Live Application Link:** [**https://contacts-list-theta.vercel.app/**]
 
 
 
@@ -46,7 +46,7 @@ You must have [Node.js](https://nodejs.org/en/) (v18 or higher) and npm installe
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/siddharth-jd/Contacts-List](https://github.com/siddharth-jd/Contacts-List)
+    git clone https://github.com/siddharth-jd/Contacts-List
     ```
 
 2.  **Install NPM packages:**
